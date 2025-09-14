@@ -1,0 +1,10 @@
+CREATE TABLE "votes" (
+	"id"	INTEGER,
+	"name"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL UNIQUE,
+	"password"	INTEGER NOT NULL,
+	"cpassword"	INTEGER NOT NULL,
+	"votecast"	TEXT DEFAULT Null,
+	"vote_time"	TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
